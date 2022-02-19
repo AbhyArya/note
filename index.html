@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
-       * {
+      * {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
@@ -210,6 +210,7 @@ img {
 }
 @media screen and (max-width: 710px) {
   .modal-cont {
+    flex-direction: column-reverse;
     width: 90vw;
     top: calc((100vh - 30vh) / 2);
     left: calc((100vw - 90vw) / 2);
@@ -233,7 +234,20 @@ img {
     height: 5rem;
     width: 5rem;
   }
+  .select-priority-cont{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .textarea-cont{
+    width: 100%;
+  }
+  .save-btn{
+    width: 10rem;
+  }
 }
+
 
    </style>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
